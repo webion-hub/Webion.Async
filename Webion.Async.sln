@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8C1A276B-FC06-465E-9208-62A384B93106}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events", "src\Webion.Async.Events\Webion.Async.Events.csproj", "{58752D3E-0E20-48D9-876B-6316F48979AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0557209F-886B-47A7-A51D-C77105DC9E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Tests", "test\Webion.Async.Events.Tests\Webion.Async.Events.Tests.csproj", "{5800801E-EAE0-4743-9D98-36ED1634ED55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Hosting", "src\Webion.Async.Events.Hosting\Webion.Async.Events.Hosting.csproj", "{B8C6C09A-922B-48A5-B6D3-37190B13C89C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Playground", "test\Webion.Async.Events.Playground\Webion.Async.Events.Playground.csproj", "{510121A3-D212-451C-A015-B3ED1EA192E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58752D3E-0E20-48D9-876B-6316F48979AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58752D3E-0E20-48D9-876B-6316F48979AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58752D3E-0E20-48D9-876B-6316F48979AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58752D3E-0E20-48D9-876B-6316F48979AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5800801E-EAE0-4743-9D98-36ED1634ED55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5800801E-EAE0-4743-9D98-36ED1634ED55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5800801E-EAE0-4743-9D98-36ED1634ED55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5800801E-EAE0-4743-9D98-36ED1634ED55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C6C09A-922B-48A5-B6D3-37190B13C89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C6C09A-922B-48A5-B6D3-37190B13C89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C6C09A-922B-48A5-B6D3-37190B13C89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C6C09A-922B-48A5-B6D3-37190B13C89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510121A3-D212-451C-A015-B3ED1EA192E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510121A3-D212-451C-A015-B3ED1EA192E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510121A3-D212-451C-A015-B3ED1EA192E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510121A3-D212-451C-A015-B3ED1EA192E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58752D3E-0E20-48D9-876B-6316F48979AD} = {8C1A276B-FC06-465E-9208-62A384B93106}
+		{5800801E-EAE0-4743-9D98-36ED1634ED55} = {0557209F-886B-47A7-A51D-C77105DC9E56}
+		{B8C6C09A-922B-48A5-B6D3-37190B13C89C} = {8C1A276B-FC06-465E-9208-62A384B93106}
+		{510121A3-D212-451C-A015-B3ED1EA192E9} = {0557209F-886B-47A7-A51D-C77105DC9E56}
+	EndGlobalSection
+EndGlobal

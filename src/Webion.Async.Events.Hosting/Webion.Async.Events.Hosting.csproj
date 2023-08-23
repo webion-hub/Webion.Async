@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Webion.Async.Events.Hosting</Title>
+        <Authors>Webion SRL</Authors>
+        <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+        <RepositoryUrl>https://github.com/webion-hub/Webion.Async</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Description>Registers an async event dispatcher in the DI container.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Webion.Async.Events\Webion.Async.Events.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="readme.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
