@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <Title>Webion.Async.Events.Hosting</Title>
         <Authors>Webion SRL</Authors>
-        <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/webion-hub/Webion.Async</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Description>Registers an async event dispatcher in the DI container.</Description>

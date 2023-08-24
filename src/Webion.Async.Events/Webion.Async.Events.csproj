@@ -9,7 +9,7 @@
     <Description>Provides a simple dispatcher to handle events asynchronously.</Description>
     <RepositoryUrl>https://github.com/webion-hub/Webion.Async</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageLicense>https://licenses.nuget.org/MIT</PackageLicense>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
