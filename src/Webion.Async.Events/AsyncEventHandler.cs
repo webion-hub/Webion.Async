@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.Threading;
 namespace Webion.Async.Events;
 
 public abstract class AsyncEventHandler<T> : IAsyncEventHandler<T>
+    where T : IAsyncEvent
 {
     protected readonly ILogger<AsyncEventHandler<T>> Logger;
     private readonly AsyncQueue<T> _events = new();
@@ -17,7 +18,10 @@ public abstract class AsyncEventHandler<T> : IAsyncEventHandler<T>
     public void Push(object value)
     {
         if (value is not T t)
+        {
+            Logger.LogWarning("Invalid event type {Type}", value.GetType());
             return;
+        }
         
         _events.Enqueue(t);
     }
