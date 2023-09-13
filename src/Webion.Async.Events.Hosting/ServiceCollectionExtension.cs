@@ -30,6 +30,7 @@ public static class ServiceCollectionExtension
     
     public static void AddAsyncEventHandler<TEvent, THandler>(this IServiceCollection services)
         where THandler : AsyncEventHandler<TEvent>
+        where TEvent : IAsyncEvent
     {
         services.AddSingleton(new AsyncEventHandlerConfig
         {
