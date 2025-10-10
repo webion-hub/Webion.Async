@@ -1,3 +1,5 @@
+using Webion.Async.Events.Abstractions;
+
 namespace Webion.Async.Events.Tests.Mocks;
 
 public sealed class MockEvent : IAsyncEvent

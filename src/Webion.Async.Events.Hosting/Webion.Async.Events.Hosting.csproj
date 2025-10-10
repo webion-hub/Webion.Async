@@ -9,9 +9,9 @@
         <RepositoryUrl>https://github.com/webion-hub/Webion.Async</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Description>Registers an async event dispatcher in the DI container.</Description>
-        <TargetFrameworks>net7.0;net6.0</TargetFrameworks>
-        <LangVersion>11.0</LangVersion>
-        <Version>1.0.1</Version>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <LangVersion>13</LangVersion>
+        <Version>9.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Webion.Async.Events.Abstractions\Webion.Async.Events.Abstractions.csproj" />
       <ProjectReference Include="..\Webion.Async.Events\Webion.Async.Events.csproj" />
     </ItemGroup>
 

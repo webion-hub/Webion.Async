@@ -1,5 +1,6 @@
+using System.Threading.Channels;
 using Microsoft.Extensions.Logging;
-using Microsoft.VisualStudio.Threading;
+using Webion.Async.Events.Abstractions;
 
 namespace Webion.Async.Events;
 
@@ -7,11 +8,13 @@ public abstract class AsyncEventHandler<T> : IAsyncEventHandler<T>
     where T : IAsyncEvent
 {
     protected readonly ILogger<AsyncEventHandler<T>> Logger;
-    private readonly AsyncQueue<T> _events = new();
+    
+    private readonly Channel<T> _events;
 
     protected AsyncEventHandler(ILogger<AsyncEventHandler<T>> logger)
     {
         Logger = logger;
+        _events = Channel.CreateUnbounded<T>();
     }
     
     
@@ -22,8 +25,11 @@ public abstract class AsyncEventHandler<T> : IAsyncEventHandler<T>
             Logger.LogWarning("Invalid event type {Type}", value.GetType());
             return;
         }
-        
-        _events.Enqueue(t);
+
+        if (!_events.Writer.TryWrite(t))
+        {
+            Logger.LogWarning("Error while enqueueing event");
+        }
     }
     
     
@@ -31,10 +37,10 @@ public abstract class AsyncEventHandler<T> : IAsyncEventHandler<T>
     {
         try
         {
-            while (!cancellationToken.IsCancellationRequested)
+            var events = _events.Reader.ReadAllAsync(cancellationToken);
+            await foreach (var e in events)
             {
-                var value = await _events.DequeueAsync(cancellationToken);
-                await HandleAsync(value, cancellationToken);
+                await HandleAsync(e, cancellationToken);
             }
         }
         catch (TaskCanceledException) {}

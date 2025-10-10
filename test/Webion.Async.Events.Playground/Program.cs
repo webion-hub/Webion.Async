@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Webion.Async.Events;
+using Webion.Async.Events.Abstractions;
 using Webion.Async.Events.Hosting;
 using Webion.Async.Events.Playground;
 

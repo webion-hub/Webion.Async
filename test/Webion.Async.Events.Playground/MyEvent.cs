@@ -1,3 +1,5 @@
+using Webion.Async.Events.Abstractions;
+
 namespace Webion.Async.Events.Playground;
 
 public sealed class MyEvent : IAsyncEvent

@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Webion.Async.Events.Abstractions;
 
 namespace Webion.Async.Events.Hosting;
 

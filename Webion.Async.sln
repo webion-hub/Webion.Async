@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Hosting
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Playground", "test\Webion.Async.Events.Playground\Webion.Async.Events.Playground.csproj", "{510121A3-D212-451C-A015-B3ED1EA192E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webion.Async.Events.Abstractions", "src\Webion.Async.Events.Abstractions\Webion.Async.Events.Abstractions.csproj", "{35EFD6F5-D93F-4977-B8C4-38084B444F5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,11 +42,16 @@ Global
 		{510121A3-D212-451C-A015-B3ED1EA192E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{510121A3-D212-451C-A015-B3ED1EA192E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{510121A3-D212-451C-A015-B3ED1EA192E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EFD6F5-D93F-4977-B8C4-38084B444F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EFD6F5-D93F-4977-B8C4-38084B444F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EFD6F5-D93F-4977-B8C4-38084B444F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EFD6F5-D93F-4977-B8C4-38084B444F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{58752D3E-0E20-48D9-876B-6316F48979AD} = {8C1A276B-FC06-465E-9208-62A384B93106}
 		{5800801E-EAE0-4743-9D98-36ED1634ED55} = {0557209F-886B-47A7-A51D-C77105DC9E56}
 		{B8C6C09A-922B-48A5-B6D3-37190B13C89C} = {8C1A276B-FC06-465E-9208-62A384B93106}
 		{510121A3-D212-451C-A015-B3ED1EA192E9} = {0557209F-886B-47A7-A51D-C77105DC9E56}
+		{35EFD6F5-D93F-4977-B8C4-38084B444F5B} = {8C1A276B-FC06-465E-9208-62A384B93106}
 	EndGlobalSection
 EndGlobal

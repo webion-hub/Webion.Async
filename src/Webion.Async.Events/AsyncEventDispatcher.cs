@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
+using Webion.Async.Events.Abstractions;
 
 namespace Webion.Async.Events;
 

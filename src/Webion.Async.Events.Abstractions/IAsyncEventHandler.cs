@@ -1,4 +1,4 @@
-namespace Webion.Async.Events;
+namespace Webion.Async.Events.Abstractions;
 
 public interface IAsyncEventHandler<out T> where T : IAsyncEvent
 {
